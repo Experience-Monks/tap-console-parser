@@ -1,0 +1,49 @@
+{
+  "name": "tap-console-parser",
+  "version": "1.0.0",
+  "description": "parses tap by hijacking console.log",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "events": "^1.0.2",
+    "sliced": "0.0.5",
+    "tap-out": "^1.2.0",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.3",
+    "deep-equal": "^1.0.0",
+    "faucet": "0.0.1",
+    "smokestack": "^3.3.0",
+    "tape": "^4.0.0",
+    "vm": "0.0.1"
+  },
+  "scripts": {
+    "test": "browserify test/index.js | smokestack"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "tap",
+    "tape",
+    "parser",
+    "parse",
+    "test",
+    "log",
+    "browser",
+    "window"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/tap-console-parser.git"
+  },
+  "homepage": "https://github.com/Jam3/tap-console-parser",
+  "bugs": {
+    "url": "https://github.com/Jam3/tap-console-parser/issues"
+  }
+}
