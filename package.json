@@ -12,7 +12,7 @@
   "dependencies": {
     "events": "^1.0.2",
     "sliced": "0.0.5",
-    "tap-out": "^1.2.0",
+    "tap-out": "git://github.com/mattdesl/tap-out#feature/raw-error-string",
     "through2": "^0.6.5"
   },
   "devDependencies": {
