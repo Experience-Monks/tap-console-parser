@@ -16,15 +16,11 @@
     "through2": "^0.6.5"
   },
   "devDependencies": {
-    "browserify": "^10.2.3",
-    "deep-equal": "^1.0.0",
     "faucet": "0.0.1",
-    "smokestack": "^3.3.0",
-    "tape": "^4.0.0",
-    "vm": "0.0.1"
+    "tape": "^4.0.0"
   },
   "scripts": {
-    "test": "browserify test/index.js | smokestack"
+    "test": "node test/index.js | faucet"
   },
   "keywords": [
     "console",
