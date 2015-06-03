@@ -56,11 +56,7 @@ module.exports = function() {
   out.pipe(tap)
   tap.on('result', handleResult)
   tap.on('assert', function onAssert (assert) {
-    //tap-out provides the assert with a missing
-    //error field until next tick
-    process.nextTick(function runAssert () {
-      emitter.emit('assert', assert)
-    })
+    emitter.emit('assert', assert)
   })
 
   // hook up rest of events
