@@ -72,9 +72,7 @@ module.exports = function() {
 
   function write(args) {
     // ensure all args are strings
-    var cleanArgs = args.map(function(item) {
-      return item.toString()
-    })
+    var cleanArgs = args.map(String)
 
     // try parsing it as tap
     var output = format.apply(null, cleanArgs)

@@ -44,3 +44,10 @@ test('can parse tap output correctly', function(t) {
     t.end()
   }
 })
+
+test('console.log(undefined) does not throw', function (t) {
+  var tap = Tap()
+  console.log(undefined)
+  tap.detach()
+  t.end()
+})
