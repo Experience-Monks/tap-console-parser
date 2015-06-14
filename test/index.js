@@ -51,3 +51,12 @@ test('console.log(undefined) does not throw', function (t) {
   tap.detach()
   t.end()
 })
+
+test('console.log() works as usual after detach', function (t) {
+  var nativeMethod = console.log
+  var tap = Tap()
+  tap.detach()
+  t.strictEqual(console.log, nativeMethod)
+  console.log('# should not throw')
+  t.end()
+})
