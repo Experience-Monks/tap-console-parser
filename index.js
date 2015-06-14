@@ -48,7 +48,7 @@ module.exports = function() {
   }
 
   function detach() {
-    console.log = nativeMethod.bind(console)
+    console.log = nativeMethod
   }
 
   attach()
